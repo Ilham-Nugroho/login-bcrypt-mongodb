@@ -1,0 +1,16 @@
+<%- include('partials/header') -%>
+
+
+
+<form class="form-signin" action="/register" method="POST">
+
+    <h1>Register</h1>
+      <input class="form-control signup-top" placeholder="Name" type="text" id="name" name="name" required>
+      <input class="form-control signup-mid" placeholder="Email" type="email" id="email" name="email" required>
+      <input class="form-control signup-bot" placeholder="Password" type="password" id="password" name="password"  required>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit" name="button">Register</button>
+    <a href="/login">Login</a>
+</form>
+
+<%- include('partials/footer') -%>

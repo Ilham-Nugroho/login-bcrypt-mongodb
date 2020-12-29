@@ -1,0 +1,16 @@
+<%- include('partials/header') -%>
+
+
+<form class="form-signin" action="/login" method="POST">
+  <h1>Login</h1>
+  <% if (messages.error) {%>
+    <%= messages.error %>
+  <% } %>
+
+      <input class="form-control signup-top"  placeholder="Email Address" type="email" id="email" name="email" required>
+      <input class="form-control signup-bot" placeholder="Password" type="password" id="password" name="password"  required>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit" name="button">Login</button>
+    <a href="/register">Register</a>
+</form>
+<%- include('partials/footer') -%>
